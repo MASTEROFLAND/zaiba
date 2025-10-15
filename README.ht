@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiba - Naija's P2P Swap Marketplace 🚀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #f8f8f8; 
+            color: #333; 
+        }
+        header { 
+            background: linear-gradient(to right, #008753, #006400); /* Naija green vibes */
+            color: #fff; 
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5em; 
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .search-bar { 
+            margin: 20px auto; 
+            max-width: 600px; 
+            display: flex; 
+        }
+        .search-bar input { 
+            flex: 1; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 50px 0 0 50px; 
+            font-size: 1em; 
+        }
+        .search-bar button { 
+            padding: 15px 30px; 
+            background: #FFD700; /* Gold */
+            color: #008753; 
+            border: none; 
+            border-radius: 0 50px 50px 0; 
+            cursor: pointer; 
+            transition: background 0.3s; 
+        }
+        .search-bar button:hover { background: #FFCC00; }
+        .hero { 
+            background: url('https://via.placeholder.com/1920x400?text=Zaiba+Hero+Banner') center/cover; 
+            padding: 60px 20px; 
+            text-align: center; 
+            color: #fff; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero h2 { font-size: 3em; margin: 0; }
+        .hero p { font-size: 1.5em; margin: 10px 0; }
+        .cta-btn { 
+            background: #008753; 
+            color: #fff; 
+            padding: 15px 40px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: transform 0.3s; 
+        }
+        .cta-btn:hover { transform: scale(1.05); }
+        section { padding: 40px 20px; text-align: center; }
+        .categories { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .category-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        .category { 
+            background: #f0f0f0; 
+            padding: 20px; 
+            border-radius: 10px; 
+            transition: box-shadow 0.3s; 
+            cursor: pointer; 
+        }
+        .category:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .category i { font-size: 2em; color: #008753; }
+        .featured { background: #FFD700; color: #333; }
+        .listing-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        .listing { 
+            background: #fff; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            transition: transform 0.3s; 
+        }
+        .listing:hover { transform: translateY(-5px); }
+        .listing img { width: 100%; height: 200px; object-fit: cover; }
+        .listing h4 { margin: 10px; }
+        .listing p { margin: 0 10px 10px; font-size: 0.9em; }
+        .how-it-works { background: #fff; }
+        .steps { 
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+            flex-wrap: wrap; 
+        }
+        .step { max-width: 300px; }
+        .step i { font-size: 3em; color: #FFD700; }
+        footer { 
+            background: #008753; 
+            color: #fff; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        footer a { color: #FFD700; text-decoration: none; margin: 0 10px; }
+        @media (max-width: 768px) { .steps { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zaiba 🇳🇬</h1>
+        <p>Naija’s P2P Marketplace to Swap New/Used Items. Secure Escrow, Pidgin Vibes, Better Than Jiji!</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for swaps... e.g., 'iPhone for sneakers'">
+            <button onclick="alert('Oya, searching Naija swaps! 📱👟')">Search</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Fast, Fun, Naija-Powered Trades! 🚀</h2>
+        <p>Abeg, swap your jara securely—no wahala. #ZaibaSwap</p>
+        <a href="#" class="cta-btn" onclick="alert('Let's swap! Sign up coming soon.')">Start Swapping Now!</a>
+    </section>
+
+    <section class="categories">
+        <h2>Browse Categories</h2>
+        <div class="category-grid">
+            <div class="category" onclick="alert('Browsing Mobiles & Gadgets...')"><i class="fas fa-mobile-alt"></i><p>Mobiles & Gadgets</p></div>
+            <div class="category" onclick="alert('Browsing Fashion & Beauty...')"><i class="fas fa-tshirt"></i><p>Fashion & Beauty</p></div>
+            <div class="category" onclick="alert('Browsing Electronics...')"><i class="fas fa-laptop"></i><p>Electronics</p></div>
+            <div class="category" onclick="alert('Browsing Home & Furniture...')"><i class="fas fa-couch"></i><p>Home & Furniture</p></div>
+            <div class="category" onclick="alert('Browsing Vehicles...')"><i class="fas fa-car"></i><p>Vehicles</p></div>
+            <div class="category" onclick="alert('Browsing More...')"><i class="fas fa-ellipsis-h"></i><p>More Categories</p></div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Swaps</h2>
+        <div class="listing-grid">
+            <div class="listing">
+                <img src="https://via.placeholder.com/300x200?text=iPhone+Swap" alt="iPhone">
+                <h4>iPhone 12 for Android</h4>
+                <p>Secure escrow. Lagos. Swap now!</p>
+                <button onclick="alert('Interest noted!')">Swap</button>
+            </div>
+            <div class="listing">
+                <img src="https://via.placeholder.com/300x200?text=Sneakers+Swap" alt="Sneakers">
+                <h4>Nike Sneakers for Bag</h4>
+                <p>Pidgin chat. Abuja. Fast trade!</p>
+                <button onclick="alert('Interest noted!')">Swap</button>
+            </div>
+            <div class="listing">
+                <img src="https://via.placeholder.com/300x200?text=Laptop+Swap" alt="Laptop">
+                <h4>Laptop for PS5</h4>
+                <p>No wahala. Naija-wide.</p>
+                <button onclick="alert('Interest noted!')">Swap</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How Zaiba Works</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fas fa-list"></i>
+                <h3>List Your Jara</h3>
+                <p>Upload item, set swap terms. Easy!</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-search"></i>
+                <h3>Find Match</h3>
+                <p>Search, chat in Pidgin, agree deal.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Swap</h3>
+                <p>Escrow holds till both happy. Boom!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zaiba. All rights Naija-owned.</p>
+        <a href="#"><i class="fab fa-twitter"></i> X</a>
+        <a href="#"><i class="fab fa-instagram"></i> Insta</a>
+        <a href="#"><i class="fab fa-facebook"></i> FB</a>
+        <p>Contact: info@zaiba.ng | Terms | Privacy</p>
+    </footer>
+
+    <script>
+        // Simple JS for future expansions (e.g., filter categories)
+        console.log('Zaiba loaded! 🚀');
+    </script>
+</body>
+</html>
